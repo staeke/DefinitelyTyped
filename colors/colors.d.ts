@@ -1,6 +1,7 @@
 // Type definitions for Colors.js 0.6.0-1
 // Project: https://github.com/Marak/colors.js
 // Definitions by: Bart van der Schoor <https://github.com/Bartvds>
+// Definitions by: Staffan Eketorp <https://github.com/staeke>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 declare module "colors" {
@@ -134,4 +135,45 @@ interface String {
     trap: string;
     random: string;
     zalgo: string;
+}
+
+declare module 'colors/safe' {
+    export function strip(any): string;
+    export function stripColors(any): string;
+
+    export function black(any): string;
+    export function red(any): string;
+    export function green(any): string;
+    export function yellow(any): string;
+    export function blue(any): string;
+    export function magenta(any): string;
+    export function cyan(any): string;
+    export function white(any): string;
+    export function gray(any): string;
+    export function grey(any): string;
+
+    export function bgBlack(any): string;
+    export function bgRed(any): string;
+    export function bgGreen(any): string;
+    export function bgYellow(any): string;
+    export function bgBlue(any): string;
+    export function bgMagenta(any): string;
+    export function bgCyan(any): string;
+    export function bgWhite(any): string;
+
+    export function reset(any): string;
+    export function bold(any): string;
+    export function dim(any): string;
+    export function italic(any): string;
+    export function underline(any): string;
+    export function inverse(any): string;
+    export function hidden(any): string;
+    export function strikethrough(any): string;
+
+    export function rainbow(any): string;
+    export function zebra(any): string;
+    export function america(any): string;
+    export function trap(any): string;
+    export function random(any): string;
+    export function zalgo(any): string;
 }
